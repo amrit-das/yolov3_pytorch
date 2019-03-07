@@ -11,9 +11,9 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 from PIL import Image
 
-config_path = 'config/yolov3.cfg'
-weights_path = 'config/yolov3.weights'
-class_path = 'config/coco.names'
+config_path = 'data/yolov3.cfg'
+weights_path = 'data/yolov3.weights'
+class_path = 'data/coco.names'
 
 img_size = 416
 conf_thres = 0.8

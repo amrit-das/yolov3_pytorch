@@ -15,11 +15,10 @@ config_path = 'data/yolov3.cfg'
 weights_path = 'data/yolov3.weights'
 class_path = 'data/coco.names'
 
-img_size = 416
-conf_thres = 0.8
-nms_thres = 0.4
+img_size, conf_thres, nms_thres = 416,0.8,0.4
 
 model = Darknet(config_path, img_size = img_size)
+
 model.load_weights(weights_path)
 model.cuda()
 model.eval()
